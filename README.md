@@ -15,7 +15,7 @@ Responsywny landing page zbudowany z użyciem **React**, **Tailwind CSS** oraz *
 
 Strona dostępna online dzięki [Vercel](https://vercel.com):
 
-🔗 [Zobacz na żywo](https://)
+🔗 [Zobacz na żywo](https://landing-page-estatery-oljq.vercel.app/)
 
 ## 🔧 Instalacja i uruchomienie lokalne
 
@@ -24,7 +24,7 @@ Aby uruchomić projekt lokalnie:
 1. **Sklonuj repozytorium:**
 
    ```bash
-   git clone https://github.com/
+   git clone https://github.com/Jakubba/landing-page-estatery.git
    cd landing-page
    ```
 
