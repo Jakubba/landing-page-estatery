@@ -1,5 +1,6 @@
 # 🚀 Landing Page Estatery - React + TypeScript + Tailwind CSS + Framer Motion
 
+<img src="./src/assets/images/design-project.png" width="890px" height="560px">
 Responsywny landing page zbudowany z użyciem **React**, **Tailwind CSS** oraz **Framer Motion**. Projekt został zaprojektowany na podstawie landing page o dynamicznym interfejsie oraz pełnej responsywności na wszystkich urządzeniach.
 
 ## ✨ Technologie
