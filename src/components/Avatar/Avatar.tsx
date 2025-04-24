@@ -1,4 +1,3 @@
-import React from 'react';
 import { AvatarProps } from './Avatar.types';
 const Avatar = ({ avatar, isActive }: AvatarProps) => (
   <div className="avatar relative mx-[10px] flex inline-block h-[60px] w-[60px] items-center justify-center">

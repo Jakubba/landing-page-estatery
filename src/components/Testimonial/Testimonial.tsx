@@ -1,4 +1,3 @@
-import React from 'react';
 import { TestimonialProps } from './Testimonial.types';
 const Testimonial = ({ testimonial, className }: TestimonialProps) => (
   <blockquote className={`mb-[48px] flex flex-col items-center ${className}`}>

@@ -1,4 +1,3 @@
-import React from 'react';
 import stars from '../../assets/icons/icon-white-stars.svg';
 import { TagLabelProps } from './TagLabel.types';
 

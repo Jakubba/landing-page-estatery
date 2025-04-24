@@ -1,4 +1,3 @@
-import React from 'react';
 import { HeroTextBlock } from '../HeroTextBlock/HeroTextBlock';
 import { HeroMapBlock } from '../HeroMapBlock/HeroMapBlock';
 import gradientbg from '../../assets/images/Gradient-background.png';

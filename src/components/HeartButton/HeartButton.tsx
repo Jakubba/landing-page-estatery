@@ -1,4 +1,3 @@
-import React from 'react';
 import purpleHeart from '../../assets/icons/purple-heart.svg';
 
 export const HeartButton = () => {
