@@ -50,9 +50,9 @@ Aby uruchomić projekt lokalnie:
 landing-page-estatery/
 ├── public/
 ├── src/
-│   ├── assets/                  # Obrazy i ikony 
-│   │   ├── icons 
-│   │   ├── images 
+│   ├── assets/                  # Obrazy i ikony
+│   │   ├── icons
+│   │   ├── images
 │   │   └── main.jsx
 │   ├── components/              # Komponenty UI
 │   │   ├── AniamtedText/
@@ -124,21 +124,21 @@ landing-page-estatery/
 │   │   └──TextBlock/
 │   │       └── TextBlock.tsx
 │   ├── data/                  # Dane statyczne do komponentów
-│   │   ├── footerData.ts 
-│   │   ├── heroData.ts 
+│   │   ├── footerData.ts
+│   │   ├── heroData.ts
 │   │   ├── lisitngData.ts
-│   │   ├── navbarData.ts 
-│   │   ├── tabSelectorContent.ts 
+│   │   ├── navbarData.ts
+│   │   ├── tabSelectorContent.ts
 │   │   └── TestimonalsData.ts
 │   ├── hooks/
-│   │   └── useScrollAnimation.ts  
-│   ├── styles/                  # Style globalne   
+│   │   └── useScrollAnimation.ts
+│   ├── styles/                  # Style globalne
 │   │   └── base/
-│   │       ├── font.scss 
-│   │       ├── global.scss 
+│   │       ├── font.scss
+│   │       ├── global.scss
 │   │       └── swiper.scss
 │   ├── utils/
-│   │   └── aniamtions.ts 
+│   │   └── aniamtions.ts
 │   ├── App.scss
 │   ├── App.jsx
 │   ├── index.css
@@ -162,9 +162,3 @@ Projekt stworzony przez **Jakub Barszcz**
 ## 📝 Licencja
 
 Projekt dostępny na licencji [MIT](LICENSE).
-
-```
-
----
-
-```
