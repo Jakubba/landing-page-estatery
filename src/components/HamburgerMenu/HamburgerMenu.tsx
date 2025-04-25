@@ -1,9 +1,18 @@
 import React from 'react';
 import { HamburgerMenuProps } from './HamburgerMenu.types';
+import { motion } from 'framer-motion';
+import { fadeInUp } from '../../utils/animations';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isMenuOpen, toggleMenu }) => {
+  const { ref, controls } = useScrollAnimation();
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      variants={fadeInUp}
+      initial="hidden"
+      animate={controls}
       className="z-50 flex h-6 w-6 cursor-pointer flex-col items-center justify-center space-y-1 lg:hidden"
       onClick={toggleMenu}
     >
@@ -22,6 +31,6 @@ export const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ isMenuOpen, toggle
           isMenuOpen ? '-translate-y-[6px] -rotate-45' : ''
         }`}
       />
-    </div>
+    </motion.div>
   );
 };

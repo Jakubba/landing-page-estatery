@@ -1,4 +1,5 @@
 import { AvatarProps } from './Avatar.types';
+import './Avatar.scss';
 const Avatar = ({ avatar, isActive }: AvatarProps) => (
   <div className="avatar relative mx-[10px] flex inline-block h-[60px] w-[60px] items-center justify-center">
     {isActive && <span className="loader"></span>}

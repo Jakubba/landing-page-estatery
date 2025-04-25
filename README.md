@@ -50,11 +50,106 @@ Aby uruchomić projekt lokalnie:
 landing-page-estatery/
 ├── public/
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
+│   ├── assets/                  # Obrazy i ikony 
+│   │   ├── icons 
+│   │   ├── images 
+│   │   └── main.jsx
+│   ├── components/              # Komponenty UI
+│   │   ├── AniamtedText/
+│   │   │   ├── AniamtedText.tsx
+│   │   │   └── AniamtedText.types.ts
+│   │   ├── AuthButtons/
+│   │   │   └── AuthButtons.tsx
+│   │   ├── Avatar/
+│   │   │   ├── Avatar.tsx
+│   │   │   ├── Avatar.tsx
+│   │   │   └── Avatar.types.ts
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   └── Button.types.ts
+│   │   ├──Card/
+│   │   │   ├── Card.scss
+│   │   │   ├── Card.tsx
+│   │   │   └── Card.types.ts
+│   │   ├── Footer/
+│   │   │   └── Footer.tsx
+│   │   ├── FooterBoottom/
+│   │   │   └── FooterBoottom.tsx
+│   │   ├── FooterNav/
+│   │   │   ├── FooterNav.tsx
+│   │   │   └── FooterNav.types.ts
+│   │   ├── FooterSocialMedia/
+│   │   │   ├── FooterSocialMedia.tsx
+│   │   │   └── FooterSocialMedia.types.ts
+│   │   ├── HamburgerMenu/
+│   │   │   ├── HamburgerMenu.tsx
+│   │   │   └── HamburgerMenu.types.ts
+│   │   ├── HeartButton/
+│   │   │   └── HeartButton.tsx
+│   │   ├── Hero/
+│   │   │   ├── Hero.tsx
+│   │   │   └── Hero.types.ts
+│   │   ├── LisitngSwiper/
+│   │   │   ├── LisitngSwiper.tsx
+│   │   │   └── LisitngSwiper.types.ts
+│   │   ├── Logo/
+│   │   │   ├── Logo.tsx
+│   │   │   └── Logo.types.ts
+│   │   ├── MapBlock/
+│   │   │   └── LMapBlock.tsx
+│   │   ├── Menu/
+│   │   │   └── Menu.tsx
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.tsx
+│   │   │   └── Navbar.types.ts
+│   │   ├── StatItem/
+│   │   │   ├── StatItem.tsx
+│   │   │   └── StatItem.types.ts
+│   │   ├── TabButton/
+│   │   │   ├── TabButton.tsx
+│   │   │   └── TabButton.types.ts
+│   │   ├── TabSelector/
+│   │   │   ├── TabSelector.tsx
+│   │   │   └── TabSelector.types.ts
+│   │   ├── TagLabel/
+│   │   │   ├── TagLabel.scss
+│   │   │   ├── TagLabel.tsx
+│   │   │   └── TagLabel.types.ts
+│   │   ├── Testimonal/
+│   │   │   ├── Testimonal.tsx
+│   │   │   └── Testimonal.types.ts
+│   │   ├── TestomonialsSection/
+│   │   │   ├── TestomonialsSection.tsx
+│   │   │   └── TestomonialsSection.types.ts
+│   │   └──TextBlock/
+│   │       └── TextBlock.tsx
+│   ├── data/                  # Dane statyczne do komponentów
+│   │   ├── footerData.ts 
+│   │   ├── heroData.ts 
+│   │   ├── lisitngData.ts
+│   │   ├── navbarData.ts 
+│   │   ├── tabSelectorContent.ts 
+│   │   └── TestimonalsData.ts
+│   ├── hooks/
+│   │   └── useScrollAnimation.ts  
+│   ├── styles/                  # Style globalne   
+│   │   └── base/
+│   │       ├── font.scss 
+│   │       ├── global.scss 
+│   │       └── swiper.scss
+│   ├── utils/
+│   │   └── aniamtions.ts 
+│   ├── App.scss
 │   ├── App.jsx
+│   ├── index.css
+│   ├── main.tsx
 │   └── main.jsx
+├── .gitignore
+├── .prettiercc
+├── index.html
+├── eslint.config.js
+├── package-lock.json
+├── package.json
 ├── tailwind.config.js
 ├── package.json
 └── README.md

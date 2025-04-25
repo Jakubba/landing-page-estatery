@@ -1,12 +1,7 @@
 import React from 'react';
+import { TabButtonProps } from './TabButton.types';
 
-type Props = {
-  isActive: boolean;
-  label: string;
-  onClick: () => void;
-};
-
-export const TabButton: React.FC<Props> = ({ isActive, label, onClick }) => (
+export const TabButton: React.FC<TabButtonProps> = ({ isActive, label, onClick }) => (
   <button
     className={`min-w-[151px] cursor-pointer rounded-lg border px-[8px] py-[12px] text-center align-middle text-lg leading-6 font-bold tracking-tight transition-all duration-300 ${
       isActive

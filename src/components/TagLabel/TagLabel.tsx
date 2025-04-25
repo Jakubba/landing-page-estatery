@@ -1,5 +1,6 @@
 import stars from '../../assets/icons/icon-white-stars.svg';
 import { TagLabelProps } from './TagLabel.types';
+import './TagLabel.scss';
 
 export const TagLabel = ({ label }: TagLabelProps) => (
   <div className="absolute top-[180px] left-[-1rem]">

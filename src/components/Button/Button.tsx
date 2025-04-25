@@ -1,11 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-
-interface ButtonProps {
-  variant?: 'primary' | 'secondary';
-  children: ReactNode;
-  to?: string;
-}
+import { ButtonProps } from './Button.types';
 
 const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, to }) => {
   const baseStyle =
