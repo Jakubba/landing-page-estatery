@@ -4,6 +4,9 @@ import Testimonial from '../../components/Testimonial/Testimonial';
 import Avatar from '../../components/Avatar/Avatar';
 import { AnimatedText } from '../../components/AnimatedText/AnimatedText';
 import { TestimonialsSectionProps } from './TestimonialSection.types';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../../utils/animations';
+import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
   sectionTitle = testimonialHeader.sectionTitle,
@@ -11,7 +14,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 }) => {
   const [currentTestimonialIndex, setCurrentTestimonialIndex] = useState(0);
   const [hasAnimated, setHasAnimated] = useState(false);
-
+  const { ref, controls } = useScrollAnimation();
   useEffect(() => {
     if (!hasAnimated) {
       setHasAnimated(true);
@@ -30,7 +33,13 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
     'mb-[32px] flex justify-center flex-wrap max-w-[544px] text-center text-[20px] leading-[160%] font-medium tracking-[-0.5%] md:mb-[80px] md:text-left';
 
   return (
-    <section className="flex min-h-[375px] w-full flex-col items-center justify-center bg-gradient-to-b from-white via-[#f4effe] to-[#f4effe] p-8">
+    <motion.section
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={fadeIn}
+      className="flex min-h-[375px] w-full flex-col items-center justify-center bg-gradient-to-b from-white via-[#f4effe] to-[#f4effe] p-8"
+    >
       <div className="flex w-full max-w-[736px] flex-col items-center text-center">
         <header>
           {hasAnimated && (
@@ -53,7 +62,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
