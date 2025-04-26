@@ -122,7 +122,8 @@ landing-page-estatery/
 │   │   │   ├── TestomonialsSection.tsx
 │   │   │   └── TestomonialsSection.types.ts
 │   │   └──TextBlock/
-│   │       └── TextBlock.tsx
+│   │   │   ├── TextBlock.tsx
+│   │       └── TextBlock.types.ts
 │   ├── data/                  # Dane statyczne do komponentów
 │   │   ├── footerData.ts
 │   │   ├── heroData.ts

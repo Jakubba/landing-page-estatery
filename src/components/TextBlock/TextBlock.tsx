@@ -1,6 +1,6 @@
 import React from 'react';
-import { textData } from '../../data/heroData';
 import { StatItem } from '../StatItem/StatItem';
+import { TextBlockProps } from './TextBlock.types';
 import gradientbg from '../../assets/images/Gradient-background.png';
 import { AnimatedText } from '../AnimatedText/AnimatedText';
 import { motion } from 'framer-motion';
@@ -12,7 +12,9 @@ const headerStyle =
 const subHeaderStyle =
   'mb-[32px] flex flex-wrap max-w-[544px] text-center text-[20px] leading-[160%] font-medium tracking-[-0.5%] md:mb-[80px] md:text-left';
 
-export const TextBlock: React.FC = () => {
+
+
+export const TextBlock: React.FC<TextBlockProps> = ({ textData }) => {
   const { ref, controls } = useScrollAnimation();
 
   return (
@@ -31,7 +33,7 @@ export const TextBlock: React.FC = () => {
           variants={fadeInUp}
         >
           {textData.stats.map((stat) => (
-            <StatItem key={stat.label} stat={stat} />
+            <StatItem key={stat.id} stat={stat} /> 
           ))}
         </motion.ul>
       </div>

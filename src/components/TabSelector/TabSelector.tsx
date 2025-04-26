@@ -5,14 +5,20 @@ import { AnimatedText } from '../AnimatedText/AnimatedText';
 import { motion } from 'framer-motion';
 import { fadeInUp } from '../../utils/animations';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
-import { houseListings, apartmentListings } from '../../data/listingsData';
 import { TabSelectorProps } from './TabSelector.types';
+
 const headerStyle =
   'flex flex-wrap justify-center mb-[24px] max-w-[544px] text-center text-4xl leading-[140%] font-bold tracking-[-1%]';
 const subHeaderStyle =
   'flex flex-wrap justify-center mb-[48px]  max-w-[544px] text-center text-base leading-[160%] font-medium';
 
-export const TabSelector: React.FC<TabSelectorProps> = ({ heading, description }) => {
+
+export const TabSelector: React.FC<TabSelectorProps> = ({
+  heading,
+  description,
+  houseListings,
+  apartmentListings,
+}) => {
   const [activeTab, setActiveTab] = useState<'houses' | 'apartments'>('houses');
 
   const { ref, controls } = useScrollAnimation();

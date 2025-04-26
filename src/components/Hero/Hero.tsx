@@ -1,4 +1,5 @@
 import { TextBlock } from '../TextBlock/TextBlock';
+import { textData } from '../../data/heroData';
 import { MapBlock } from '../MapBlock/MapBlock';
 import gradientbg from '../../assets/images/Gradient-background.png';
 import { motion } from 'framer-motion';
@@ -16,7 +17,7 @@ export const Hero = () => {
       className="relative mx-auto flex w-full justify-center md:mb-[64px] md:min-h-[750px] md:flex-row"
     >
       <div className="flex w-full max-w-[1440px] flex-col md:flex-row">
-        <TextBlock />
+        <TextBlock textData={textData} />
         <MapBlock />
       </div>
       <img className="absolute bottom-0 left-0 hidden md:block" src={gradientbg} alt="" />
