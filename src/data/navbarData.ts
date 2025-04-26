@@ -6,7 +6,7 @@ export const navbarData: NavbarData = {
   loginText: 'Login',
   signUpText: 'Sign Up',
   menuItems: [
-    { name: 'Rent', path: '/test' },
+    { name: 'Rent', path: '/' },
     { name: 'Buy', path: '/' },
     { name: 'Sell', path: '/' },
     { name: 'Manage Property', path: '/' },
